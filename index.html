@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Leon Fuessner - Resume</title>
 </head>
 <body>
+    <div class="controls">
+        <button id="theme-toggle">[ Toggle Dark/Light Mode ]</button>
+        <button id="font-toggle">[ Switch Font ]</button>
+    </div>
     <header>
-        <h1>Leon Fuessner</h1>
+        <h1># Leon Fuessner</h1>
         <div class="contact-info">
             Brisbane, Australia | +61 413 463 393 | <a href="mailto:leonfuessner@hotmail.de">leon.fuessner@hotmail.de</a> | 
             <a href="https://www.linkedin.com/in/leon-fuessner-bab212170">LinkedIn</a> | 
@@ -21,12 +25,12 @@
     </header>
 
     <section>
-        <h2>Summary</h2>
+        <h2>## Summary</h2>
         <p>I’m a software engineer passionate about C++, Simulations, and automated driving technologies, with 4+ years of experience that started in Android development. I love working with clean, scalable architectures, Test-Driven Development, and modern software design - and I’m especially excited about contributing to open-source projects.</p>
     </section>
 
    <section>
-  <h2>Technical Skills</h2>
+  <h2>## Technical Skills</h2>
   <div class="skills-grid">
     <div><strong>Languages & Frameworks:</strong> C++, C#, Kotlin, Java, JavaScript</div>
     <div><strong>Simulation & Robotics:</strong> Autoware, AWSIM, ROS2, Unity3D, Unreal Engine, VisionOS</div>
@@ -39,7 +43,7 @@
   </div>
 </section>
     <section>
-        <h2>Professional Experience</h2>
+        <h2>## Professional Experience</h2>
         <div class="job">
             <h3 class="job-title">PhD Candidate | Queensland University of Technology</h3>
             <p class="job-period">Mar 2026 – Present | Brisbane, Australia</p>
@@ -101,7 +105,7 @@
     </section>
 
     <section>
-        <h2>Education & Certifications</h2>
+        <h2>## Education & Certifications</h2>
         <ul>
             <li><strong>Bachelor’s Thesis in Computer Science</strong> – Queensland University of Technology (2025)</li>
             <li><strong>Bachelor of Science in Computer Science</strong> – Ludwig-Maximilians-Universität Munich (2021–2024)</li>
@@ -111,7 +115,7 @@
     </section>
 
     <section>
-        <h2>Projects & Open Source</h2>
+        <h2>## Projects & Open Source</h2>
         <ul>
             <li><strong>Game Memory Manipulation:</strong> Reverse-engineering of CS2, implementing a helper tool for memory analysis and manipulation using C++, x64dbg, and Cheat Engine.</li>
             <li><strong>RoboRally:</strong> Transformed a board game into an online multiplayer game using Java and JavaFX.</li>
@@ -121,12 +125,27 @@
     </section>
 
     <section>
-        <h2>Additional Information</h2>
+        <h2>## Additional Information</h2>
         <ul>
             <li><strong>Work Rights:</strong> Currently holding full-time work rights in Australia.</li>
             <li><strong>Languages:</strong> German (Native), English (Fluent), Spanish (Intermediate).</li>
             <li><strong>Interests:</strong> Mobile Development, 3D programming, Virtual Reality, Augmented Reality, Open Source contributions.</li>
         </ul>
     </section>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const fontToggle = document.getElementById('font-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+
+        fontToggle.addEventListener('click', () => {
+            body.classList.toggle('alt-font');
+        });
+    </script>
 </body>
+
 </html>
