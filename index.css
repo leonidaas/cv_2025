@@ -4,7 +4,6 @@
     --link-color: #0000ee;
     --border-color: #000000;
     --font-primary: "JetBrains Mono", monospace;
-    --font-secondary: "Fira Code", monospace;
 }
 
 body.dark-mode {
@@ -12,10 +11,6 @@ body.dark-mode {
     --text-color: #00ff00;
     --link-color: #00ffff;
     --border-color: #00ff00;
-}
-
-body.alt-font {
-    --font-primary: "Fira Code", monospace;
 }
 
 * {
