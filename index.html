@@ -5,149 +5,286 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <title>Leon Fuessner - Resume</title>
+    <title>Leon Fuessner</title>
 </head>
 <body>
-    <div class="controls">
-        <button id="theme-toggle">[ Toggle Dark/Light Mode ]</button>
-    </div>
-    <header>
-        <h1># Leon Fuessner</h1>
-        <div class="contact-info">
-            Brisbane, Australia | +61 413 463 393 | <a href="mailto:leonfuessner@hotmail.de">leon.fuessner@hotmail.de</a> |
-            <a href="https://www.linkedin.com/in/leon-fuessner-bab212170">LinkedIn</a> |
-            <a href="https://github.com/leonidaas">GitHub</a>
-        </div>
-        <p>Software Engineer | PhD Candidate</p>
-    </header>
-
-    <section>
-        <h2>## Currently</h2>
-        <ul>
-            <li>Researching remote operation and digital twinning for automated vehicles at QUT</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>## Summary</h2>
-        <p>Software engineer and PhD candidate with 7+ years shipping code across mobile, VR/AR, and automated driving systems. From refactoring Android apps with 100K+ users to prototyping BMW's Vision Pro experiences to building digital twins for self-driving vehicles. Currently researching remote operation of automated vehicles at QUT — trying to make cars drive themselves, safely, from a distance.</p>
-    </section>
-
-   <section>
-  <h2>## Technical Skills</h2>
-  <div class="skills-grid">
-    <div><strong>Primary Stack:</strong> C++ (systems, performance), Python (DL, simulations), ROS2, Autoware, AWSIM</div>
-    <div><strong>Simulation & Robotics:</strong> Unity3D, Unreal Engine, digital twin pipelines, real-time systems</div>
-    <div><strong>Learning:</strong> Reverse engineering (x64dbg, Cheat Engine), x86-64 assembly, memory manipulation</div>
-    <div><strong>Proficient:</strong> Kotlin, Java, Android, C#, Swift, SwiftUI</div>
-    <div><strong>Familiar:</strong> JavaScript, Node.js, GraphQL, Docker, AWS, GCP, Linux</div>
-    <div><strong>Research Tools:</strong> PyTorch, fast.ai, Git, CI/CD (GitHub Actions)</div>
-  </div>
-</section>
-    <section>
-        <h2>## Professional Experience</h2>
-        <div class="job">
-            <h3 class="job-title">PhD Candidate | Queensland University of Technology</h3>
-            <p class="job-period">Mar 2026 - Present | Brisbane, Australia</p>
-            <ul>
-                <li>Digital Twin and Remote Operation for Automated Vehicles Research</li>
+    <div class="scanlines"></div>
+    
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">LF</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="/blog/">Blog</a></li>
             </ul>
         </div>
-        <div class="job">
-            <h3 class="job-title">Software Developer & Research Assistant | Queensland University of Technology</h3>
-            <p class="job-period">Feb 2025 - Nov 2025 | Brisbane, Australia</p>
-            <ul>
-                <li>Conducting research on VR/AR solutions in road safety to prevent car accidents.</li>
-                <li>Implementing a Digital Twin of a Real World Terrain using Autoware and AWSIM</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3 class="job-title">Software Developer | MaibornWolff GmbH</h3>
-            <p class="job-period">Apr 2023 -  Jan 2025 | Munich, Germany</p>
-            <ul>
-                <li>Developed applications for clients like STIHL and BMW.</li>
-                <li>3D VR/AR programming and prototyping for BMW using Swift, SwiftUI, Apple Vision Pro, Unreal Engine, and Meta Quest Pro.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3 class="job-title">Android Developer | Droid-Dojo (Freelancer)</h3>
-            <p class="job-period">Nov 2021 - Mar 2023 | Remote</p>
-            <ul>
-                <li>Worked on projects for clients like Deutsche Bahn and Joyn.</li>
-                <li>Developed a private project entirely with Jetpack Compose.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3 class="job-title">Android Developer | myposter GmbH</h3>
-            <p class="job-period">Jul 2020 - Oct 2021 | Munich, Germany</p>
-            <ul>
-                <li>Developed multiple features for the Android app in a two-person team.</li>
-                <li>Originally built with RxJava2, later refactored to Coroutines in a multi-module architecture.</li>
-                <li>Developed an Android app for the myposter shop, including features for creating photo books and calendars.</li>
-                <li>Implemented an intelligent photo album creation service using Python.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3 class="job-title">Android Developer | Spontacts GmbH (formerly Jochen Schweizer)</h3>
-            <p class="job-period">2019 - Jun 2020 | Munich, Germany</p>
-            <ul>
-                <li>Refactored the Spontacts app (100,000+ monthly active users) to Kotlin and GraphQL.</li>
-                <li>Implemented a new group feature.</li>
-                <li>Social networking platform using Java, Kotlin, GraphQL, NodeJS, Firebase, DataBinding, MVVM, and XML Views.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3 class="job-title">Software Developer | Jochen Schweizer Technology Solutions GmbH</h3>
-            <p class="job-period">2017 - 2020 | Munich, Germany</p>
-            <ul>
-                <li>Completed an apprenticeship as an IT Specialist in Application Development.</li>
-                <li>Developed an Android app for the Jochen Schweizer shop, including a voucher management system using Java, Kotlin, MVC, Dagger, and XML Views.</li>
-            </ul>
-        </div>
-    </section>
+    </nav>
 
-    <section>
-        <h2>## Education & Certifications</h2>
-        <ul>
-            <li><strong>Bachelor's Thesis in Computer Science</strong> - Queensland University of Technology (2025)</li>
-            <li><strong>Bachelor of Science in Computer Science</strong> - Ludwig-Maximilians-Universität Munich (2021-2024)</li>
-            <li><strong>Study Abroad Semester in Computer Science</strong> - Universidad de Sevilla (2023-2024)</li>
-            <li><strong>IT Specialist in Application Development (Apprenticeship)</strong> - Vocational School for Computer Science Munich (2017-2020)</li>
-        </ul>
-    </section>
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-label">Researcher · Developer · Systems Engineer</div>
+            <h1 class="hero-title">
+                <span id="typing-text"></span><span class="cursor">_</span>
+            </h1>
+            <p class="hero-desc">
+                Software engineer and PhD candidate with 7+ years shipping code across mobile, 
+                VR/AR, and automated driving systems. From refactoring Android apps with 100K+ 
+                users to prototyping BMW's Vision Pro experiences to building digital twins 
+                for self-driving vehicles. Currently researching remote operation of AVs at QUT.
+            </p>
+            <div class="hero-links">
+                <a href="mailto:leon.fuessner@hotmail.de" class="btn-outline">Get in Touch</a>
+                <a href="https://github.com/leonidaas" class="btn-text">GitHub →</a>
+            </div>
+        </section>
 
-    <section>
-        <h2>## Projects & Open Source</h2>
-        <ul>
-            <li><strong>Game Memory Manipulation:</strong> Reverse-engineering of CS2, implementing a helper tool for memory analysis and manipulation using C++, x64dbg, and Cheat Engine.</li>
-            <li><strong>RoboRally:</strong> Transformed a board game into an online multiplayer game using Java and JavaFX.</li>
-            <li><strong>MeetUp Talk at Google Developer Group:</strong> Android Paging with GraphQL (<a href="https://gdg.community.dev/events/details/google-gdg-munich-android-presents-september-meetup-jetpack-and-more/">Event</a>, <a href="https://de.slideshare.net/secret/d7X7QtfRTnu1Of">Slides</a>)</li>
-        </ul>
-    </section>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="section-label">01 — About</div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a PhD candidate at Queensland University of Technology, researching 
+                        digital twins and remote operation for automated vehicles. My work sits at 
+                        the intersection of systems engineering, human factors, and real-time computing.
+                    </p>
+                    <p>
+                        Before academia, I spent 5 years in industry — building Android apps, 
+                        prototyping VR/AR experiences for BMW, and shipping products used by 
+                        hundreds of thousands of people.
+                    </p>
+                </div>
+                <div class="about-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Location</span>
+                        <span class="meta-value">Brisbane, Australia</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Email</span>
+                        <span class="meta-value">leon.fuessner@hotmail.de</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Languages</span>
+                        <span class="meta-value">German, English, Spanish</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Interests</span>
+                        <span class="meta-value">Self-driving vehicles, robotics, game dev, reverse engineering, chess</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>## Let's Talk</h2>
-        <p>Interested in digital twins, remote operation, or automated vehicles? <a href="mailto:leonfuessner@hotmail.de">Reach out</a>.</p>
-    </section>
+        <!-- Research -->
+        <section id="research" class="section">
+            <div class="section-label">02 — Research</div>
+            <div class="research-header">
+                <h2 class="research-title">Remote Operation + Digital Twinning</h2>
+                <p class="research-desc">
+                    My PhD focuses on the integration of real-time digital twins with remote 
+                    operation interfaces for automated vehicles. Key question: how do we enable 
+                    safe, effective remote supervision and control of AV fleets?
+                </p>
+            </div>
+            <div class="research-areas">
+                <div class="area-card">
+                    <div class="area-num">01</div>
+                    <div class="area-title">Digital Twinning</div>
+                    <div class="area-desc">Real-time state replication, predictive rendering, simulation-to-reality gaps</div>
+                </div>
+                <div class="area-card">
+                    <div class="area-num">02</div>
+                    <div class="area-title">Remote Operation</div>
+                    <div class="area-desc">Teleoperation protocols, latency compensation, human factors</div>
+                </div>
+                <div class="area-card">
+                    <div class="area-num">03</div>
+                    <div class="area-title">Human-Machine Interaction</div>
+                    <div class="area-desc">Cognitive load, adaptive interfaces, shared autonomy</div>
+                </div>
+                <div class="area-card">
+                    <div class="area-num">04</div>
+                    <div class="area-title">Fleet Management</div>
+                    <div class="area-desc">Multi-vehicle supervision, scalability, operator allocation</div>
+                </div>
+            </div>
+            <div class="research-link">
+                <a href="https://github.com/leonidaas/phd-research" class="btn-text">View Research Repository →</a>
+            </div>
+        </section>
 
-    <section>
-        <h2>## Additional Information</h2>
-        <ul>
-            <li><strong>Languages:</strong> German (Native), English (Fluent), Spanish (Intermediate).</li>
-            <li><strong>Interests:</strong> Self-driving vehicles, robotics, game development, reverse engineering, competitive chess.</li>
-        </ul>
-    </section>
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="section-label">03 — Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-title">Primary Stack</div>
+                    <div class="skill-items">C++ (systems, performance), Python (DL, simulations), ROS2, Autoware, AWSIM</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Simulation & Robotics</div>
+                    <div class="skill-items">Unity3D, Unreal Engine, digital twin pipelines, real-time systems</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Learning</div>
+                    <div class="skill-items">Reverse engineering (x64dbg, Cheat Engine), x86-64 assembly, memory manipulation</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Proficient</div>
+                    <div class="skill-items">Kotlin, Java, Android, C#, Swift, SwiftUI</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Familiar</div>
+                    <div class="skill-items">JavaScript, Node.js, GraphQL, Docker, AWS, GCP, Linux</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Research Tools</div>
+                    <div class="skill-items">PyTorch, fast.ai, Git, CI/CD (GitHub Actions)</div>
+                </div>
+            </div>
+        </section>
 
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <div class="section-label">04 — Experience</div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2026 — Now</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">PhD Candidate</div>
+                        <div class="timeline-company">Queensland University of Technology</div>
+                        <div class="timeline-desc">Digital Twin and Remote Operation for Automated Vehicles</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Software Developer & Research Assistant</div>
+                        <div class="timeline-company">Queensland University of Technology</div>
+                        <div class="timeline-desc">VR/AR road safety, Digital Twin with Autoware and AWSIM</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 — 2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Software Developer</div>
+                        <div class="timeline-company">MaibornWolff GmbH</div>
+                        <div class="timeline-desc">STIHL and BMW client projects, 3D VR/AR programming with Vision Pro, Unreal Engine</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 — 2023</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Android Developer</div>
+                        <div class="timeline-company">Droid-Dojo (Freelancer)</div>
+                        <div class="timeline-desc">Deutsche Bahn, Joyn, Jetpack Compose projects</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 — 2021</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Android Developer</div>
+                        <div class="timeline-company">myposter GmbH</div>
+                        <div class="timeline-desc">Multi-module architecture, RxJava → Coroutines migration</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2017 — 2020</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Software Developer & Apprenticeship</div>
+                        <div class="timeline-company">Jochen Schweizer / Spontacts</div>
+                        <div class="timeline-desc">100K+ MAU app refactored to Kotlin, GraphQL, group features</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-        });
-    </script>
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="section-label">05 — Projects</div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-title">PhD Research</div>
+                    <div class="project-desc">Remote Operation + Digital Twinning for AVs. Literature review, simulation, human factors evaluation.</div>
+                    <div class="project-links">
+                        <a href="https://github.com/leonidaas/phd-research">Repository →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Game Memory Manipulation</div>
+                    <div class="project-desc">Reverse-engineering CS2, building helper tools with C++, x64dbg, Cheat Engine.</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">RoboRally</div>
+                    <div class="project-desc">Board game transformed into online multiplayer with Java and JavaFX.</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">GDG Munich Talk</div>
+                    <div class="project-desc">Android Paging with GraphQL — slides and recording available.</div>
+                    <div class="project-links">
+                        <a href="https://de.slideshare.net/secret/d7X7QtfRTnu1Of">Slides →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section">
+            <div class="section-label">06 — Education</div>
+            <div class="education-list">
+                <div class="edu-item">
+                    <div class="edu-year">2025</div>
+                    <div class="edu-content">
+                        <div class="edu-title">Bachelor's Thesis in Computer Science</div>
+                        <div class="edu-school">Queensland University of Technology</div>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-year">2024</div>
+                    <div class="edu-content">
+                        <div class="edu-title">Bachelor of Science in Computer Science</div>
+                        <div class="edu-school">Ludwig-Maximilians-Universität Munich</div>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-year">2024</div>
+                    <div class="edu-content">
+                        <div class="edu-title">Study Abroad Semester</div>
+                        <div class="edu-school">Universidad de Sevilla</div>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-year">2020</div>
+                    <div class="edu-content">
+                        <div class="edu-title">IT Specialist in Application Development</div>
+                        <div class="edu-school">Vocational School for Computer Science Munich</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <span class="footer-logo">LF</span>
+                <span class="footer-copy">© 2026 Leon Fuessner</span>
+            </div>
+            <div class="footer-right">
+                <a href="mailto:leon.fuessner@hotmail.de">Email</a>
+                <a href="https://github.com/leonidaas">GitHub</a>
+                <a href="https://www.linkedin.com/in/leon-fuessner-bab212170">LinkedIn</a>
+                <a href="/blog/">Blog</a>
+                <a href="/rss.xml">RSS</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
-
 </html>
