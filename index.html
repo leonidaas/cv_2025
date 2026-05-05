@@ -5,305 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <title>Leon Fuessner</title>
+    <title>LEON FUESSNER</title>
 </head>
 <body>
-    <div class="grain"></div>
+    <!-- VHS Overlay Effects -->
+    <div class="vhs-overlay"></div>
+    <div class="scanlines"></div>
+    <div class="chromatic-aberration"></div>
+    <div class="vignette"></div>
+    <div class="tracking-noise"></div>
     
-    <!-- Decorative vertical line -->
-    <div class="vertical-line"></div>
+    <!-- REC Indicator -->
+    <div class="rec-indicator">
+        <span class="rec-dot"></span>
+        <span class="rec-text">REC</span>
+    </div>
     
-    <nav class="nav">
-        <div class="nav-inner">
-            <a href="/" class="nav-logo">LF</a>
-            <div class="nav-right">
-                <span class="nav-status">● Available for collaboration</span>
-                <a href="mailto:leon.fuessner@hotmail.de" class="nav-email">leon.fuessner@hotmail.de</a>
+    <!-- Date Stamp -->
+    <div class="date-stamp">
+        <span id="date-display">00:00:00</span>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="crt-screen">
+        <header class="header">
+            <div class="header-line"></div>
+            <h1 class="name">LEON FUESSNER</h1>
+            <div class="header-line"></div>
+        </header>
+        
+        <section class="info-block">
+            <div class="label">> STATUS</div>
+            <div class="value">PHD CANDIDATE / SYSTEMS ENGINEER</div>
+        </section>
+        
+        <section class="info-block">
+            <div class="label">> RESEARCH</div>
+            <div class="value">DIGITAL TWINS FOR AUTOMATED VEHICLES</div>
+            <div class="value">REMOTE OPERATION &amp; HUMAN-MACHINE INTERACTION</div>
+        </section>
+        
+        <section class="info-block">
+            <div class="label">> STACK</div>
+            <div class="value">C++ / PYTHON / ROS2 / AUTOWARE / AWSIM</div>
+        </section>
+        
+        <section class="info-block">
+            <div class="label">> LOCATION</div>
+            <div class="value">BRISBANE, AUSTRALIA</div>
+        </section>
+        
+        <section class="links">
+            <div class="label">> CONNECT</div>
+            <div class="link-row">
+                <a href="mailto:leon.fuessner@hotmail.de">[EMAIL]</a>
+                <a href="https://github.com/leonidaas">[GITHUB]</a>
+                <a href="https://www.linkedin.com/in/leon-fuessner-bab212170">[LINKEDIN]</a>
             </div>
-        </div>
-    </nav>
-
-    <main>
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-number">01</div>
-            <div class="hero-content">
-                <div class="hero-label">Researcher · Developer · Systems Engineer</div>
-                <h1 class="hero-title">
-                    <span class="title-line">Digital Twins</span>
-                    <span class="title-line">Remote Operation</span>
-                    <span class="title-line accent">Automated Vehicles</span>
-                </h1>
-                <div class="hero-meta">
-                    <div class="meta-col">
-                        <span class="meta-label">Based in</span>
-                        <span class="meta-value">Brisbane, Australia</span>
-                    </div>
-                    <div class="meta-col">
-                        <span class="meta-label">Institution</span>
-                        <span class="meta-value">Queensland University of Technology</span>
-                    </div>
-                    <div class="meta-col">
-                        <span class="meta-label">Status</span>
-                        <span class="meta-value">PhD Candidate, Stage 2 Proposal</span>
-                    </div>
-                </div>
+            <div class="link-row">
+                <a href="https://github.com/leonidaas/phd-research">[RESEARCH]</a>
+                <a href="/blog/">[BLOG]</a>
             </div>
         </section>
-
-        <!-- Statement -->
-        <section class="statement">
-            <div class="statement-line"></div>
-            <p class="statement-text">
-                Software engineer with 7+ years shipping code across mobile, VR/AR, 
-                and automated driving systems. Currently researching how digital twins 
-                can enable safe, effective remote operation of autonomous vehicle fleets 
-                at Queensland University of Technology.
-            </p>
-            <div class="statement-actions">
-                <a href="mailto:leon.fuessner@hotmail.de" class="btn-primary">Get in Touch</a>
-                <a href="https://github.com/leonidaas" class="btn-text">View GitHub →</a>
-            </div>
-        </section>
-
-        <!-- Research Focus -->
-        <section class="research">
-            <div class="section-header">
-                <span class="section-number">02</span>
-                <span class="section-title">Research Focus</span>
-            </div>
-            
-            <div class="research-grid">
-                <div class="research-card">
-                    <div class="card-num">01</div>
-                    <div class="card-content">
-                        <h3>Digital Twinning</h3>
-                        <p>Real-time state replication, predictive rendering, simulation-to-reality validation for AV control loops.</p>
-                    </div>
-                </div>
-                <div class="research-card">
-                    <div class="card-num">02</div>
-                    <div class="card-content">
-                        <h3>Remote Operation</div>
-                        <p>Teleoperation protocols, latency compensation, and human factors in multi-AV fleet supervision.</p>
-                    </div>
-                </div>
-                <div class="research-card">
-                    <div class="card-num">03</div>
-                    <div class="card-content">
-                        <h3>HMI Design</h3>
-                        <p>Cognitive load optimization, adaptive interfaces, and shared autonomy frameworks for safe AV supervision.</p>
-                    </div>
-                </div>
-                <div class="research-card">
-                    <div class="card-num">04</div>
-                    <div class="card-content">
-                        <h3>Fleet Systems</h3>
-                        <p>Scalable supervision architectures, operator allocation, and statistical multiplexing for AV fleets.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="research-link">
-                <a href="https://github.com/leonidaas/phd-research" class="link-arrow">View Research Repository →</a>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section class="skills">
-            <div class="section-header">
-                <span class="section-number">03</span>
-                <span class="section-title">Technical Skills</span>
-            </div>
-            
-            <div class="skills-list">
-                <div class="skill-row">
-                    <span class="skill-name">Primary Stack</span>
-                    <span class="skill-divider"></span>
-                    <span class="skill-value">C++, Python, ROS2, Autoware, AWSIM</span>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-name">Simulation</span>
-                    <span class="skill-divider"></span>
-                    <span class="skill-value">Unity3D, Unreal Engine, digital twin pipelines</span>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-name">Learning</span>
-                    <span class="skill-divider"></span>
-                    <span class="skill-value">Reverse engineering, x86-64 assembly, memory manipulation</span>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-name">Proficient</span>
-                    <span class="skill-divider"></span>
-                    <span class="skill-value">Kotlin, Java, Android, C#, Swift, SwiftUI</span>
-                </dive
-                <div class="skill-row">
-                    <span class="skill-name">Tools</span>
-                    <span class="skill-divider"></span>
-                    <span class="skill-value">PyTorch, fast.ai, Git, GitHub Actions, Docker</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience -->
-        <section class="experience">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <span class="section-title">Experience</span>
-            </div>
-            
-            <div class="exp-list">
-                <div class="exp-item">
-                    <div class="exp-period">2026 — Now</dive
-                    <div class="exp-content">
-                        <div class="exp-title">PhD Candidate</div>
-                        <div class="exp-org">Queensland University of Technology</div>
-                        <div class="exp-desc">Digital Twin and Remote Operation for Automated Vehicles Research</div>
-                    </dive
-                </div>
-                
-                <div class="exp-item">
-                    <div class="exp-period">2025</div>
-                    <div class="exp-content">
-                        <div class="exp-title">Software Developer & Research Assistant</div>
-                        <div class="exp-org">Queensland University of Technology</div>
-                        <div class="exp-desc">VR/AR road safety, Digital Twin with Autoware and AWSIM</div>
-                    </dive
-                </div>
-                
-                <div class="exp-item">
-                    <div class="exp-period">2023 — 2025</div>
-                    <div class="exp-content">
-                        <div class="exp-title">Software Developer</dive
-                        <div class="exp-org">MaibornWolff GmbH</div>
-                        <div class="exp-desc">STIHL and BMW client projects, 3D VR/AR programming with Vision Pro, Unreal Engine</dive
-                    </div>
-                </div>
-                
-                <div class="exp-item">
-                    <div class="exp-period">2021 — 2023</div>
-                    <div class="exp-content">
-                        <div class="exp-title">Android Developer</dive
-                        <div class="exp-org">Droid-Dojo (Freelancer)</div>
-                        <div class="exp-desc">Deutsche Bahn, Joyn, Jetpack Compose projects</div>
-                    </dive
-                </div>
-                
-                <div class="exp-item">
-                    <div class="exp-period">2020 — 2021</dive
-                    <div class="exp-content">
-                        <div class="exp-title">Android Developer</div>
-                        <div class="exp-org">myposter GmbH</div>
-                        <div class="exp-desc">Multi-module architecture, RxJava → Coroutines migration</div>
-                    </dive
-                </div>
-                
-                <div class="exp-item">
-                    <div class="exp-period">2017 — 2020</div>
-                    <div class="exp-content">
-                        <div class="exp-title">Software Developer & Apprenticeship</dive
-                        <div class="exp-org">Jochen Schweizer / Spontacts</div>
-                        <div class="exp-desc">100K+ MAU app refactored to Kotlin, GraphQL, group features</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section class="projects">
-            <div class="section-header">
-                <span class="section-number">05</span>
-                <span class="section-title">Selected Projects</span>
-            </div>
-            
-            <div class="projects-grid">
-                <div class="project-item">
-                    <div class="project-header">
-                        <span class="project-name">PhD Research</span>
-                        <span class="project-year">2026</span>
-                    </div>
-                    <div class="project-desc">Remote Operation + Digital Twinning for AVs. Literature review, simulation, human factors evaluation.</div>
-                    <div class="project-link">
-                        <a href="https://github.com/leonidaas/phd-research">Repository →</a>
-                    </div>
-                </div>
-                
-                <div class="project-item">
-                    <div class="project-header">
-                        <span class="project-name">Game Memory Manipulation</span>
-                        <span class="project-year">2025</span>
-                    </div>
-                    <div class="project-desc">Reverse-engineering CS2, building helper tools with C++, x64dbg, Cheat Engine.</div>
-                </div>
-                
-                <div class="project-item">
-                    <div class="project-header">
-                        <span class="project-name">RoboRally</span>
-                        <span class="project-year">2024</span>
-                    </div>
-                    <div class="project-desc">Board game transformed into online multiplayer with Java and JavaFX.</div>
-                </div>
-                
-                <div class="project-item">
-                    <div class="project-header">
-                        <span class="project-name">GDG Munich Talk</span>
-                        <span class="project-year">2023</span>
-                    </div>
-                    <div class="project-desc">Android Paging with GraphQL — MeetUp presentation with slides.</div>
-                    <div class="project-link">
-                        <a href="https://de.slideshare.net/secret/d7X7QtfRTnu1Of">Slides →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education -->
-        <section class="education">
-            <div class="section-header">
-                <span class="section-number">06</span>
-                <span class="section-title">Education</span>
-            </div>
-            
-            <div class="edu-list">
-                <div class="edu-item">
-                    <div class="edu-year">2025</div>
-                    <div class="edu-degree">Bachelor's Thesis in Computer Science</div>
-                    <div class="edu-school">Queensland University of Technology</div>
-                </div>
-                <div class="edu-item">
-                    <div class="edu-year">2024</div>
-                    <div class="edu-degree">Bachelor of Science in Computer Science</div>
-                    <div class="edu-school">Ludwig-Maximilians-Universität Munich</div>
-                </div>
-                <div class="edu-item">
-                    <div class="edu-year">2024</div>
-                    <div class="edu-degree">Study Abroad Semester</div>
-                    <div class="edu-school">Universidad de Sevilla</div>
-                </div>
-                <div class="edu-item">
-                    <div class="edu-year">2020</div>
-                    <div class="edu-degree">IT Specialist in Application Development</div>
-                    <div class="edu-school">Vocational School for Computer Science Munich</div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-left">
-                <span class="footer-logo">LF</span>
-                <span class="footer-copy">© 2026 Leon Fuessner</span>
-            </div>
-            <div class="footer-links">
-                <a href="mailto:leon.fuessner@hotmail.de">Email</a>
-                <a href="https://github.com/leonidaas">GitHub</a>
-                <a href="https://www.linkedin.com/in/leon-fuessner-bab212170">LinkedIn</a>
-                <a href="/blog/">Blog</a>
-            </dive
-        </div>
-    </footer>
+        
+        <footer class="footer">
+            <div class="footer-line"></div>
+            <div class="footer-text">SYSTEM READY // AWAITING INPUT_</div>
+        </footer>
+    </div>
 
     <script src="index.js"></script>
 </body>
